@@ -1,0 +1,9 @@
+@import 'katex/dist/katex.css';
+.markdown-content {
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    h1, h2, h3 { margin: 1em 0; }
+    p { margin: 0.5em 0; }
+    code { background: #f0f0f0; padding: 2px 4px; }
+  }
