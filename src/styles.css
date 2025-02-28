@@ -1,4 +1,4 @@
-@import 'katex/dist/katex.css';
+/* @import 'katex/dist/katex.css'; */
 .markdown-content {
     margin-bottom: 20px; 
     border: 1px solid #ccc; 
@@ -6,4 +6,11 @@
     h1, h2, h3 { margin: 1em 0; }
     p { margin: 0.5em 0; }
     code { background: #f0f0f0; padding: 2px 4px; }
+  }
+
+  .YT {
+    background-color: violet;
+    width: 320px;
+    height: 240px;
+    margin: auto;
   }

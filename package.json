@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^19.1.0",
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
+    "dompurify": "^3.2.4",
     "katex": "^0.16.21",
     "marked": "^15.0.7",
     "marked-katex": "^0.3.8",
