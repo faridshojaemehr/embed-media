@@ -1,26 +1,20 @@
-import { inject, Pipe, PipeTransform } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { marked, MarkedOptions } from 'marked';
+import { Pipe, PipeTransform } from '@angular/core';
+import { SafeHtml } from '@angular/platform-browser';
+import { marked } from 'marked';
 import markedKatex from 'marked-katex-extension';
 
 @Pipe({
   name: 'embedMedia'
 })
 export class EmbedMediaPipe implements PipeTransform {
-  private sanitizer = inject(DomSanitizer);
   private ytRegex = /(?:https?:\/\/)?(?:(?:www\.)?youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|v\/)|youtu\.be\/)([^?&"'>]+)/;
 
   constructor() {
-    // Initialize marked with the latest API
     const renderer = new marked.Renderer();
-
-    const self = this;
-
     renderer.link = ({href, title, text}) => {
       console.log('renderer link called',href); 
-      return self.embedYt(href) 
+      return this.embedYt(href) 
     };
-
     renderer.link = renderer.link.bind(this);
 
     marked.use({ 

@@ -17,7 +17,8 @@ export class AppComponent  {
   
   safeHtml1 = `This is **Katex** $$c=\\sqrt{a^2+b^2}$$`;
   safeHtml2 = `This is **inline** katex: $c=\\pm\\sqrt{a^2+b^2}$`;
-  url = `https://www.youtube.com/watch?v=Ata9cSC2WpM` 
-  safeHtml3 = `can you helo me to learn python? ${this.url})`
+  url = `https://www.youtube.com/watch?v=k5E2AVpwsko` 
+  safeHtml3 = `Angular Tutorial for Beginners: Learn Angular & TypeScript
+ ${this.url})`
 
 }
